@@ -1,0 +1,24 @@
+<!DOCTYPE html><html>
+            <head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
+              
+           <link rel=\"icon\" href=\"data:,\">
+              
+              <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\">
+              
+              <script src=\"https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.0.4/jscolor.min.js\"></script>
+         
+              
+              <style>html { font-family: Helvetica; display: inline-block; margin: 10px auto; text-align: center;}
+                
+</style></head>
+              
+           <body><h1><FONT SIZE='5' COLOR='red'>RGB Led</h1>
+
+            <a  href=\"#\" id=\"change_color\" role=\"button\"><button style='width:150px; height:80px; background-color: #4CAF50; border: none; color: white; padding: 16px 35px;font-size: 20px; margin: 2px; cursor: pointer' >CHANGE COLOR</button></a> 
+
+           <input class=\"jscolor {onFineChange:'update(this)'}\" id=\"rgb\"></div>
+  </body></html>
+
+           <script>function update(picker) {document.getElementById('rgb').innerHTML = Math.round(picker.rgb[0]) + ', ' +  Math.round(picker.rgb[1]) + ', ' + Math.round(picker.rgb[2]);"
+            document.getElementById(\"change_color\").href=\"?r\" + Math.round(picker.rgb[0]) + \"g\" +  Math.round(picker.rgb[1]) + \"b\" + Math.round(picker.rgb[2]) + \"&\";}</script>
+           
